@@ -29,7 +29,7 @@ pipeline {
 		
 		stage('---deploy to tomcat---'){
 			steps {
-				  build job: 'Ant_project'
+				  build job: 'Maven-Deployment'
 			}
 		}
 		
