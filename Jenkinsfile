@@ -23,7 +23,9 @@ pipeline {
 				bat "mvn package"
 			}
       post{
-         archiveArtifacts artifacts: '**/*.war'
+	      success {
+                        archiveArtifacts artifacts: '**/*.war'
+		      }
       }
 		}
 		
